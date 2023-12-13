@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="searchBox">
+        <input type="text" id="search" placeholder="Search" />
+        <input type="button" id="button" value="search" onclick="search();" />
+    </div>
+    <div id="result">
+        <p id="resultSearch">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Amet exercitationem dicta quas magnam ab, aspernatur maxime expedita? Assumenda fugiat consequatur at deserunt
+            eum nam commodi velit exercitationem, quod alias magni. Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Amet exercitationem dicta quas magnam ab, aspernatur maxime expedita? Assumenda fugiat consequatur at
+            deserunt eum nam commodi velit exercitationem, quod alias magni. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Amet exercitationem dicta quas magnam ab, aspernatur maxime expedita? Assumenda fugiat
+            consequatur at deserunt eum nam commodi velit exercitationem, quod alias magni.
+        </p>
+    </div>
+    <script type="text/javascript">
+        const resultSearch = document.getElementById("resultSearch");
+
+        function search() {
+            let input = document.getElementById("search").value;
+            if (input !== "") {
+                let regExp = new RegExp(input, "gi");
+                resultSearch.innerHTML = (resultSearch.textContent).replace(regExp, "<mark>$&</mark>");
+            }
+        }
+    </script>
+</body>
+
+</html>
