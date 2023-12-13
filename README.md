@@ -1,2 +1,4 @@
 # text-search
-Your task is to create a search box where users can type in keywords or phrases, and your application returns results with the text being searched for highlighted. You can use any front-end framework you want (e.g. React, Angular, Vue.js, etc.).
+-this is a simple representation of how to highlight searched words wrom a search bar to taxt below 
+-i was able to create this projecct with simple javascript
+-for app testing all you need to do is open the index.html file in the browser
